@@ -107,6 +107,7 @@ struct CarEvent @0x9b1657f34caf3ad3 {
     highCpuUsage @105;
     cruiseMismatch @106;
     lkasDisabled @107;
+    steeringDegDiverged @109;
 
     driverMonitorLowAccDEPRECATED @68;
     radarCanErrorDEPRECATED @15;
@@ -168,6 +169,8 @@ struct CarState {
   stockAeb @30 :Bool;
   stockFcw @31 :Bool;
   espDisabled @32 :Bool;
+  steeringAngleDegError @42 :Float32;
+  steeringAngleDegDivergence @43 :Float32;
 
   # cruise state
   cruiseState @10 :CruiseState;
@@ -197,6 +200,9 @@ struct CarState {
   # blindspot sensors
   leftBlindspot @33 :Bool; # Is there something blocking the left lane change
   rightBlindspot @34 :Bool; # Is there something blocking the right lane change
+
+  # This is for activating ACC mode only
+  epsDisabled @41 :Bool;
 
   struct WheelSpeeds {
     # optional wheel speeds
