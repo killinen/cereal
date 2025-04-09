@@ -117,6 +117,7 @@ struct CarEvent @0x9b1657f34caf3ad3 {
     silentButtonEnable @116;
     silentBrakeHold @117;
     silentWrongGear @118;
+    steeringDegDiverged @109;
 
     radarCanErrorDEPRECATED @15;
     communityFeatureDisallowedDEPRECATED @62;
@@ -177,6 +178,7 @@ struct CarState {
   steeringRateDeg @15 :Float32;
   steeringTorque @8 :Float32;      # TODO: standardize units
   steeringTorqueEps @27 :Float32;  # TODO: standardize units
+  steeringTorqueOut @53 :Float32;      # TODO: standardize units
   steeringPressed @9 :Bool;        # if the user is using the steering wheel
   steeringRateLimited @29 :Bool;   # if the torque is limited by the rate limiter
   steerFaultTemporary @35 :Bool;   # temporary EPS fault
@@ -185,6 +187,8 @@ struct CarState {
   stockFcw @31 :Bool;
   espDisabled @32 :Bool;
   accFaulted @42 :Bool;
+  steeringAngleDegError @51 :Float32;
+  steeringAngleDegDivergence @52 :Float32;
 
   # cruise state
   cruiseState @10 :CruiseState;
