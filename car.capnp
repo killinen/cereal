@@ -117,7 +117,7 @@ struct CarEvent @0x9b1657f34caf3ad3 {
     silentButtonEnable @116;
     silentBrakeHold @117;
     silentWrongGear @118;
-    steeringDegDiverged @109;
+    steeringDegDiverged @119;
 
     radarCanErrorDEPRECATED @15;
     communityFeatureDisallowedDEPRECATED @62;
