@@ -17,11 +17,13 @@ repos:
   rev: 24.3.0
   hooks:
     - id: black
+      args: [--check, --diff]
 
 - repo: https://github.com/pre-commit/mirrors-isort
   rev: v5.10.1
   hooks:
     - id: isort
+      args: [--check-only, --diff]
 
 - repo: local
   hooks:
