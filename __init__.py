@@ -1,5 +1,6 @@
 # pylint: skip-file
 import os
+
 import capnp
 
 CEREAL_PATH = os.path.dirname(os.path.abspath(__file__))

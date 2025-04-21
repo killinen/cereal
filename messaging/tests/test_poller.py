@@ -1,8 +1,8 @@
-import unittest
-import time
-import cereal.messaging as messaging
-
 import concurrent.futures
+import time
+import unittest
+
+import cereal.messaging as messaging
 
 
 def poller():

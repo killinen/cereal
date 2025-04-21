@@ -1,14 +1,16 @@
 # must be build with scons
-from .messaging_pyx import Context, Poller, SubSocket, PubSocket  # pylint: disable=no-name-in-module, import-error
-from .messaging_pyx import MultiplePublishersError, MessagingError  # pylint: disable=no-name-in-module, import-error
-import os
-import capnp
-
-from typing import Optional, List, Union
 from collections import deque
+from typing import List, Optional, Union
+
+import capnp
 
 from cereal import log
 from cereal.services import service_list
+
+# pylint: disable=no-name-in-module, import-error
+from .messaging_pyx import (
+    Context, MessagingError, MultiplePublishersError, Poller, PubSocket,
+    SubSocket)
 
 assert MultiplePublishersError
 assert MessagingError
