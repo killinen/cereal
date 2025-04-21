@@ -83,4 +83,4 @@ jobs:
     - name: Build docker image
       run: eval "$BUILD"
     - name: Static analysis
-      run: $RUN "git init && git add -A && pre-commit run mypy flake8 pylint cppcheck --all-files"
+      run: $RUN $RUN "git init && git add -A && pre-commit run --all mypy flake8 pylint cppcheck"
