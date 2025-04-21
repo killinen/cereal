@@ -1,4 +1,5 @@
 # must be build with scons
+import os
 from collections import deque
 from typing import List, Optional, Union
 
