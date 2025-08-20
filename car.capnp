@@ -118,6 +118,7 @@ struct CarEvent @0x9b1657f34caf3ad3 {
     silentBrakeHold @117;
     silentWrongGear @118;
     steeringDegDiverged @119;
+    gearNotEngaged @120;
 
     radarCanErrorDEPRECATED @15;
     communityFeatureDisallowedDEPRECATED @62;
@@ -161,6 +162,7 @@ struct CarState {
   yawRate @22 :Float32;     # best estimate of yaw rate
   standstill @18 :Bool;
   wheelSpeeds @2 :WheelSpeeds;
+  engineRpm @54 :Float32;
 
   # gas pedal, 0.0-1.0
   gas @3 :Float32;        # this is user pedal only
