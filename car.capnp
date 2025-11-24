@@ -595,6 +595,7 @@ struct CarParams {
     faw @26;
     body @27;
     hyundaiHDA2 @28;
+    i30 @29;
   }
 
   enum SteerControlType {
